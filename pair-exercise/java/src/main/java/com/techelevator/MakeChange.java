@@ -15,7 +15,7 @@ public class MakeChange {
 
 	public static void main(String[] args) {
 		Scanner userInput = new Scanner(System.in);
-		
+
 		printMenu();
 		String menuChoice = userInput.nextLine();
 		double billAmount = Double.parseDouble(menuChoice);
@@ -24,20 +24,17 @@ public class MakeChange {
 		String userTender = userInput.nextLine();
 		double tenderedAmount = Double.parseDouble(userTender);
 		double change = tenderedAmount - billAmount;
-		
+
 		System.out.println("Your change is:  " + change);
 		System.out.println("-------------------------------------");
-		
-		
 
+		userInput.close();
 	}
 
 	public static void printMenu() {
 		System.out.println("Please enter the amount of the bill: ");
 		System.out.println("-------------------------------------");
-		
-		
+
 	}
-	
-	
+
 }
